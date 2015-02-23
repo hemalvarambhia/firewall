@@ -213,6 +213,6 @@ def rule_exists_proto?
   if @new_resource.protocol && @new_resource.port
     "#{Regexp.escape(@new_resource.port.to_s)}/#{Regexp.escape(@new_resource.protocol)}\s"
   elsif @new_resource.port
-    "#{Regexp.escape("#{@new_resource.port}")}\s"
+    "#{Regexp.escape("#{@new_resource.port.to_s}")}\s"
   end
 end
