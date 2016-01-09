@@ -1,8 +1,8 @@
-source "https://supermarket.chef.io"
+source 'https://supermarket.chef.io'
 
 metadata
 
 group :integration do
-  cookbook 'apt', '~> 2.0'
-  cookbook 'firewall-test', :path => 'test/fixtures/cookbooks/firewall-test'
+  cookbook 'apt'
+  cookbook 'firewall-test', path: 'test/fixtures/cookbooks/firewall-test'
 end
